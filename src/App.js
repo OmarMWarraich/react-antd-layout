@@ -7,8 +7,7 @@ import SubMenu from 'antd/lib/menu/SubMenu';
 
 import { Cricketer, ODICareer, Batting, Bowling, TestCareer } from './Cricketer';
 import CareerDetails from './CareerDetails';
-import { configConsumerProps } from 'antd/lib/config-provider';
-import { functionTypeAnnotation } from '@babel/types';
+
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -62,22 +61,22 @@ function App() {
                 <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
               </Breadcrumb>
               <div style={{ background: '#fff', padding: 24, minHeight: 580 }}>
-                <Cricketer name='Virat Kholi' team='IND' avatarSrc='./vk.jpg'>
-                  <ODICareer matches='239' >
-                    <Batting runs='11,520' score='183' />
+                <Cricketer name='Babar Azam' team='PAK' avatarSrc='./ba.webp'>
+                  <ODICareer matches='83' >
+                    <Batting runs='3,985' score='158' />
                     <br></br>
-                    <Bowling wickets='4' bowlingAvg='166.25' />
+                    <Bowling wickets='0' bowlingAvg='0' />
                   </ODICareer>
-                  <TestCareer matches=' 79' >
-                    <Batting runs='6,749' score='243' />
+                  <TestCareer matches='35' >
+                    <Batting runs='3985' score='143' />
                   </TestCareer>
-                  <ViewProfileButton name='Virat Kohli'/>
+                  <ViewProfileButton name='Babar Azam'/>
                 </Cricketer>
-                <Cricketer name='Jasprit Bumrah' team='IND' avatarSrc='./jb.jpg'>
-                  <TestCareer matches='12' >
-                    <Bowling wickets='62' bowlingAvg='20.63' />
+                <Cricketer name='Shaheen Afridi' team='PAK' avatarSrc='./sa.webp'>
+                  <TestCareer matches='19' >
+                    <Bowling wickets='76' bowlingAvg='25.25' />
                   </TestCareer>
-                  <ViewProfileButton name='Jasprit Bumrah'/>
+                  <ViewProfileButton name='Shaheen Afridi'/>
                 </Cricketer>
               </div>
             </Content>
